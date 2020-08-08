@@ -7,12 +7,22 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title>Power BI Demo</title>
   </head>
+
   <body>
 
       <h2>Here is the sample Power BI data rendered in Vue JS</h2>
 
-      <iframe width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=93301c44-f5d4-4739-ac6e-308e2f9543e5&groupId=64724c79-f43b-4d44-bdd5-1b2d241e674f&autoAuth=true&ctid=aab427ac-2625-46bd-8502-3669389d0efd&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWluZGlhLWNlbnRyYWwtYS1wcmltYXJ5LXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0LyJ9" frameborder="0" allowFullScreen="false"></iframe>
+      <form id="login" target="frame" method="post" action="https://app.powerbi.com/reportEmbed?reportId=93301c44-f5d4-4739-ac6e-308e2f9543e5&groupId=64724c79-f43b-4d44-bdd5-1b2d241e674f&autoAuth=true&ctid=aab427ac-2625-46bd-8502-3669389d0efd&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWluZGlhLWNlbnRyYWwtYS1wcmltYXJ5LXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0LyJ9"
 
+        <input type="hidden" name="username" value="Santhosh.Chandrasekar@zettaone.com"   />
+
+        <input type="hidden" name="password" value="Sw@services1" />
+
+      </form>
+
+      <!--<iframe width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=93301c44-f5d4-4739-ac6e-308e2f9543e5&groupId=64724c79-f43b-4d44-bdd5-1b2d241e674f&autoAuth=true&ctid=aab427ac-2625-46bd-8502-3669389d0efd&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWluZGlhLWNlbnRyYWwtYS1wcmltYXJ5LXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0LyJ9" frameborder="0" allowFullScreen="false"></iframe>-->
+
+      <iframe id="frame" name="frame" noborder="0" width="1140" height="541.25" frameborder="0" allowFullScreen="false" seamless></iframe>
 
     <!-- built files will be auto injected -->
   </body>
