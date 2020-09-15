@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Power BI Embedded Demo</title>
+
+<script src="/powerbi-client/dist/powerbi.js"></script>
+    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script type="text/javascript" language="javascript" src="https://rawgit.com/Microsoft/PowerBI-JavaScript/master/dist/powerbi.min.js"></script> </script>
+</head>
+
+<body>
+    <h1>Power BI Embedded Demo</h1>
+    <div id="reportContainer" style="width: 80%; height: 800px;"></div>
+
+    <section id="report">
+  <div style="width: 100%; height: 100%" #reportContainer></div>
+</section>
+
+</body>
+
+<script>
+powerBI: {
+reportBaseURL: 'https://app.powerbi.com/reportEmbed',
+qnaBaseURL: 'https://app.powerbi.com/qnaEmbed',
+tileBaseURL: 'https://app.powerbi.com/embed',
+groupID: '0a6b2f86-750e-4665-a498-00b5a975fe37',
+reportID: 'bc8d81df-56df-4077-8603-c10407782986'
+}
+</script>
+
+</html>
